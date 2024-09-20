@@ -2,7 +2,7 @@ import pygame
 import time
 import random
 
-# Inisialisasi Pygame
+ 
 pygame.init()
 
 # Ukuran layar
@@ -130,8 +130,7 @@ def game_loop():
     pygame.quit()
     quit()
 
-
-# Menjalankan game
+# running game
 game_loop()
 
 
