@@ -12,19 +12,20 @@
     --red-color: #e74c3c;
 }
 
+/* DARK MODE VARIABLES */
+body.dark {
+    --primary-color: #18191a;
+    --white-color: #2c2c2c;
+    --black-color: #f6f7fb;
+    --red-color: #e74c3c;
+}
+
 body {
     display: flex;
     min-height: 100vh;
     align-items: center;
     justify-content: center;
     background: var(--primary-color);
-}
-
-body.dark {
-    --primary-color: #f6f7fb;
-    --white-color: #fff;
-    --black-color: #18191a;
-    --red-color: #e74c3c;
 }
 
 .container {
@@ -79,7 +80,7 @@ body.dark {
     border: 4px solid var(--red-color);
 }
 
-.indicator .hand{
+.indicator .hand {
     position: absolute;
     height: 130px;
     width: 4px;
@@ -101,7 +102,6 @@ body.dark {
     background: var(--black-color);
 }
 
-
 .mode-switch {
     padding: 10px 20px;
     border-radius: 8px;
@@ -110,8 +110,9 @@ body.dark {
     display: inline-block;
     color: var(--white-color);
     background: var(--black-color);
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .mode-switch:active {
